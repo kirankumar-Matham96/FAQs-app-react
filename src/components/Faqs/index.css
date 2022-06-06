@@ -3,24 +3,44 @@
   padding: 0;
 }
 .bg-container {
-  height: 100vh;
+  min-height: 100vh;
   font-family: 'Roboto';
-  background-color: #000;
+  background-color: #f1f5f8;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 16px;
+}
+@media (min-width: 768px) {
+  .bg-container {
+    padding: 50px 80px;
+  }
 }
 .faqs-card-container {
-  width: 300px;
+  width: 450px;
   border-radius: 16px;
   background-color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 16px;
+  box-shadow: 0px 4px 16px 0px #bfbfbf;
+}
+@media (min-width: 768px) {
+  .faqs-card-container {
+    width: 780px;
+    padding: 26px;
+  }
 }
 .main-heading {
-  color: orange;
+  color: #cb8805;
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .main-heading {
+    font-size: 60px;
+    margin-bottom: 30px;
+  }
 }
 .faqs-container {
   list-style-type: none;

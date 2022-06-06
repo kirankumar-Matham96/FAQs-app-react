@@ -11,17 +11,39 @@ const FaqItem = props => {
   return (
     <li className="faq-item-container">
       <div className="faq-container">
-        <p className="faq">{questionText}</p>
-        <button type="button" className="button" onClick={onClickExpandButton}>
-          +
-        </button>
+        <h1 className="faq">{questionText}</h1>
         {isExpand ? (
-          <>
-            <hr />
-            <p className="faq-description">{answerText}</p>
-          </>
-        ) : null}
+          <button
+            type="button"
+            className="button"
+            onClick={onClickExpandButton}
+          >
+            <img
+              src="https://assets.ccbp.in/frontend/react-js/faqs-minus-icon-img.png"
+              alt="minus"
+              className="minus"
+            />
+          </button>
+        ) : (
+          <button
+            type="button"
+            className="button"
+            onClick={onClickExpandButton}
+          >
+            <img
+              src="https://assets.ccbp.in/frontend/react-js/faqs-plus-icon-img.png"
+              alt="plus"
+              className="plus"
+            />
+          </button>
+        )}
       </div>
+      {isExpand ? (
+        <>
+          <hr className="h-line" />
+          <p className="faq-description">{answerText}</p>
+        </>
+      ) : null}
     </li>
   )
 }
