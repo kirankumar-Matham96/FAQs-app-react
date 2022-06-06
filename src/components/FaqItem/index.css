@@ -1,0 +1,28 @@
+.faq-item-container {
+  border-radius: 16px;
+  border: 2px solid gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+}
+.faq-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+}
+.faq {
+  font-weight: 700;
+  color: gray;
+  flex-grow: 1;
+  border: 1px solid red;
+  /* width: 240px; */
+}
+.button {
+  border-radius: 100px;
+}
+.faq-description {
+  color: gray;
+}
